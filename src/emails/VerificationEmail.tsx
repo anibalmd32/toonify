@@ -106,8 +106,8 @@ export const VerificationEmail = ({
 
             {/* FOOTER */}
             <Text className="text-xs text-gray-400 text-center leading-relaxed">
-              Si no solicitaste esta verificación, puedes ignorar este correo con
-              seguridad.
+              Si no solicitaste esta verificación, puedes ignorar este correo
+              con seguridad.
               <br />
               <span className="opacity-50">
                 © {new Date().getFullYear()} Toonify Inc. Todos los derechos

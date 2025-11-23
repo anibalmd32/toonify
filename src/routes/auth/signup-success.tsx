@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, CheckCircle2, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import * as v from "valibot";
 import { EmailSchema } from "@/definitions/validationSchemas/EmailSchema";
 import { NameSchema } from "@/definitions/validationSchemas/NameSchema";
 import i18n from "@/lib/i18n";
-import { useTranslation } from "react-i18next";
 
 const signUpSearchSchema = v.object({
   userName: NameSchema,
@@ -22,8 +22,6 @@ export const Route = createFileRoute("/auth/signup-success")({
     ],
   }),
 });
-
-
 
 function RouteComponent() {
   const { t } = useTranslation();

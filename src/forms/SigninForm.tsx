@@ -69,21 +69,19 @@ export const SigninForm = () => {
             }}
           />
 
-          <div className="flex flex-col">
-            <form.AppField
-              children={(field) => (
-                <field.Input
-                  label={t("inputs.password.label")}
-                  placeholder="••••••••"
-                  type="password"
-                />
-              )}
-              name="password"
-              validators={{
-                onSubmit: RequiredSchema,
-              }}
-            />
-          </div>
+          <form.AppField
+            children={(field) => (
+              <field.Input
+                label={t("inputs.password.label")}
+                placeholder="••••••••"
+                type="password"
+              />
+            )}
+            name="password"
+            validators={{
+              onSubmit: RequiredSchema,
+            }}
+          />
         </div>
 
         <div className="mt-8">
