@@ -26,4 +26,5 @@ const getDatabaseUrl = () => {
 export const constants = {
   DATABASE_URL: getDatabaseUrl(),
   RESEND_API_KEY: process.env.RESEND_API_KEY ?? "",
+  AUTH_URL: process.env.BETTER_AUTH_URL,
 };
