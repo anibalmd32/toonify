@@ -1,8 +1,8 @@
 import { useNavigate } from "@tanstack/react-router";
+import { TriangleAlert } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { ErrorSvg } from "@/components/ErrorSvg";
-import { BRAND_BUTTON_CLASSES } from "@/definitions/styles/brandStyles";
+import { BRAND_BUTTON_CLASSES } from "@/definitions/stylesConstants/brandStyles";
 import { RequiredSchema } from "@/definitions/validationSchemas/RequiredSchema";
 import { useAppForm } from "@/hooks/useAppForm";
 import { authClient } from "@/lib/auth-client";
@@ -41,7 +41,7 @@ export const SigninForm = () => {
           className="alert alert-error shadow-sm mb-6 p-3 rounded-lg text-white/90 text-sm flex items-center gap-2"
           role="alert"
         >
-          <ErrorSvg />
+          <TriangleAlert />
           <span>{serverError}</span>
         </div>
       )}

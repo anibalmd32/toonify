@@ -5,7 +5,7 @@
       <stop offset="100%" stop-color="#5A4FCF" />
     </linearGradient>
   </defs>
-  <g transform="translate(2, 7)">
+  <g transform="translate(2, 15)">
     <path
       d="M15 10 L5 20 L15 30"
       stroke="url(#brand-gradient)"

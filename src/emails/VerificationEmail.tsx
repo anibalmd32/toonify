@@ -13,6 +13,8 @@ import {
   Text,
 } from "@react-email/components";
 import { render } from "@react-email/render";
+import { AppLogo } from "@/components/AppLogo";
+import { BRAND_BUTTON_CLASSES } from "@/definitions/stylesConstants/brandStyles";
 
 interface VerificationEmailProps {
   url: string;
@@ -58,9 +60,7 @@ export const VerificationEmail = ({
 
             {/* LOGO HEADER */}
             <Section className="mt-8 mb-8 text-center">
-              <Text className="text-4xl font-black tracking-tighter m-0 text-[#5A4FCF]">
-                toonify
-              </Text>
+              <AppLogo />
             </Section>
 
             {/* CONTENIDO PRINCIPAL */}
@@ -77,16 +77,7 @@ export const VerificationEmail = ({
 
             {/* BOTÓN CTA CON GRADIENTE */}
             <Section className="text-center my-8">
-              <Button
-                className="rounded-xl text-white text-base font-bold no-underline text-center py-4 px-10 block shadow-xl"
-                href={url}
-                style={{
-                  background:
-                    "linear-gradient(135deg, #00C6FF 0%, #5A4FCF 100%)",
-                  boxShadow: "0 10px 20px -10px rgba(90, 79, 207, 0.5)",
-                  color: "#ffffff",
-                }}
-              >
+              <Button className={BRAND_BUTTON_CLASSES} href={url}>
                 Verificar mi cuenta
               </Button>
             </Section>

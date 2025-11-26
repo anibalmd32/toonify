@@ -36,7 +36,8 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       },
       {
         name: "description",
-        content: "Genera prompts con la sintaxis perfecta para cualquier LLM, desde ChatGPT hasta Bing, para mejorar la calidad de los resultados. ¡Experimenta con diferentes modelos y personaliza tus prompts! ¡Descubre cómo mejorar tus interacciones con IA!",
+        content:
+          "Genera prompts con la sintaxis perfecta para cualquier LLM, desde ChatGPT hasta Bing, para mejorar la calidad de los resultados. ¡Experimenta con diferentes modelos y personaliza tus prompts! ¡Descubre cómo mejorar tus interacciones con IA!",
       },
       {
         title: "Syntaxia",

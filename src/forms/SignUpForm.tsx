@@ -1,7 +1,7 @@
 import { useNavigate } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import * as v from "valibot";
-import { BRAND_BUTTON_CLASSES } from "@/definitions/styles/brandStyles";
+import { BRAND_BUTTON_CLASSES } from "@/definitions/stylesConstants/brandStyles";
 import { EmailSchema } from "@/definitions/validationSchemas/EmailSchema";
 import { NameSchema } from "@/definitions/validationSchemas/NameSchema";
 import {
