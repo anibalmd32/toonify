@@ -7,7 +7,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "start": "bun run .output/server/index.mjs",
-    "deploy": "docker compose --env-file .env up --build",
+    "deploy": "docker compose --env-file .env up --build -d && docker container prune -f && docker image prune -f",
     "test": "vitest run",
     "check": "biome check --write",
     "db:generate": "drizzle-kit generate",
