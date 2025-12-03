@@ -27,9 +27,6 @@ function RouteComponent() {
         <h1 className="text-4xl font-black tracking-tight text-base-content">
           {t("pages.auth.register.title")}
         </h1>
-        <p className="text-base-content/60 font-medium">
-          {t("pages.auth.register.createAccountFree")}
-        </p>
       </div>
 
       <div className="card bg-base-100/80 shadow-2xl border border-base-200 backdrop-blur-xl">

@@ -17,6 +17,7 @@
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.3.0",
     "@bprogress/react": "^1.2.7",
     "@faker-js/faker": "^10.0.0",
     "@midudev/tailwind-animations": "^0.2.0",

@@ -12,7 +12,7 @@ export const SigninForm = () => {
   const [serverError, setServerError] = useState<string>();
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const toast = useToast()
+  const toast = useToast();
 
   const form = useAppForm({
     defaultValues: {
@@ -33,15 +33,18 @@ export const SigninForm = () => {
           }
 
           if (errorCode === "EMAIL_NOT_VERIFIED") {
-            setServerError("Usuario no verificado")
-            const res = await authClient.sendVerificationEmail({ email: JSON.parse(ctx.request.body).email })
-            
+            setServerError("Usuario no verificado");
+            const res = await authClient.sendVerificationEmail({
+              email: JSON.parse(ctx.request.body).email,
+            });
+
             if (res.data?.status) {
               toast.showToast({
-                message: "Se enviado nuevamente el enlace de verificacion a tu email",
+                message:
+                  "Se enviado nuevamente el enlace de verificacion a tu email",
                 variant: "success",
-                duration: 10000
-              })
+                duration: 10000,
+              });
             }
           }
         },

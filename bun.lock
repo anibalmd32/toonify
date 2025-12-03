@@ -5,6 +5,7 @@
     "": {
       "name": "toonify",
       "dependencies": {
+        "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.3.0",
         "@bprogress/react": "^1.2.7",
         "@faker-js/faker": "^10.0.0",
         "@midudev/tailwind-animations": "^0.2.0",
@@ -71,6 +72,8 @@
   },
   "packages": {
     "@acemir/cssom": ["@acemir/cssom@0.9.23", "", {}, "sha512-2kJ1HxBKzPLbmhZpxBiTZggjtgCwKg1ma5RHShxvd6zgqhDEdEkzpiwe7jLkI2p2BrZvFCXIihdoMkl1H39VnA=="],
+
+    "@adam.plesnik/tailwindcss-scroll-driven-animations": ["@adam.plesnik/tailwindcss-scroll-driven-animations@0.3.0", "", { "peerDependencies": { "tailwindcss": ">=3.4.0" } }, "sha512-dC6x/7y87vXuFDPWgzOqasvkr5AasAEoDWTVzRtJRn0lAOzqj0i21sBVX8qhX2yvpueQ8GZZB9oFHavrup7gsA=="],
 
     "@asamuzakjp/css-color": ["@asamuzakjp/css-color@4.1.0", "", { "dependencies": { "@csstools/css-calc": "^2.1.4", "@csstools/css-color-parser": "^3.1.0", "@csstools/css-parser-algorithms": "^3.0.5", "@csstools/css-tokenizer": "^3.0.4", "lru-cache": "^11.2.2" } }, "sha512-9xiBAtLn4aNsa4mDnpovJvBn72tNEIACyvlqaNJ+ADemR+yeMJWnBudOi2qGDviJa7SwcDOU/TRh5dnET7qk0w=="],
 

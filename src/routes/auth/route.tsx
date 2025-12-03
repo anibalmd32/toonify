@@ -1,4 +1,5 @@
 import { createFileRoute, Outlet, redirect } from "@tanstack/react-router";
+import { BgAnimatedGradient } from "@/components/BgAnimatedGradient";
 import { LangSelect } from "@/components/LangSelector";
 
 export const Route = createFileRoute("/auth")({
@@ -15,6 +16,7 @@ export const Route = createFileRoute("/auth")({
 function RouteComponent() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center p-4 relative">
+      <BgAnimatedGradient />
       <div className="absolute top-4 left-4 z-50">
         <LangSelect />
       </div>

@@ -27,7 +27,9 @@ export const auth = betterAuth({
 
       await resend.emails.send({
         from: `Syntaxia <${process.env.RESEND_DOMAIN}>`,
-        to: [user.email],
+        to: [
+          user.email,
+        ],
         subject: "Verify your Syntaxia account",
         html: await renderTemplate({
           url,

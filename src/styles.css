@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "@midudev/tailwind-animations";
+@plugin "@adam.plesnik/tailwindcss-scroll-driven-animations";
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
@@ -35,4 +36,19 @@
   --border: 2px;
   --depth: 1;
   --noise: 1;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@theme {
+  --animate-rotate-border: border-rotate 3s linear infinite;
+  @keyframes border-rotate {
+    to {
+      --border-angle: 360deg;
+    }
+  }
 }
